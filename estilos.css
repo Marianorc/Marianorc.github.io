@@ -1,0 +1,54 @@
+* {
+    font-family: "Rubik", sans-serif;
+}
+
+.nombre {
+    color: #B1AFFF;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #333333;
+}
+
+
+.navbar {
+    border-bottom: 4px solid #B1AFFF;
+    background-color: #FDFDBD;
+}
+
+.navbar a {
+    color: #000000;
+}
+
+.container {
+    margin-top: 56px;
+    max-width: 1000px;
+}
+
+#Infopersonal {
+    background: #B1AFFF;
+    border-top: #C8FFD4 solid 4px;
+    display:grid
+    
+}
+
+#Habilidades {
+    background: #C8FFD4;
+    border-top: #B8E8FC solid 4px;
+    display:grid
+}
+
+#Experiencias {
+    background: #B8E8FC;
+    border-top: #FDFDBD solid 4px;
+    display:grid
+}
+
+.pie {
+    border-top: 4px solid #B1AFFF;
+    border-bottom: 4px solid #000000;
+    background-color: #FDFDBD;
+    display:grid
+}
+
