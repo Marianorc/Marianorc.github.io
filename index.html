@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariano.R.Cajaraville-Cv</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/Imagenes/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/estilos.css" />
+
+    <script src="../JavaScript/index.js"></script>
+
+    <!-- Bootstrap 5.3.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Fuente google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top px-4 text-center">
+                <a class="navbar-brand" href="#">Cv</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#Inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Info.personal">Info.personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Habilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Experiencias">Experiencias</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Sección Inicio -->
+        <section id="Inicio" class="section">
+            <div class="col-md-12">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7">
+                        <div>
+                            <h8 class="mb-4">¡Hola mundo!</h8>
+                            <hr>
+                            <h1>Soy <b class="nombre">Mariano.R.Cajaraville</b> |</h1>
+                            <h8>Siempre parto de mi curiosidad a la hora de aprender nuevos saberes.</h8>
+                            <div>
+                                <h8>Por eso hoy me encuentro en el sector tecnologico disfrutando de nuevos desafios.
+                                </h8>
+                                <hr>
+                                <h8>Un mensaje de bienvenida, nunca esta de mas</h8>
+
+                                <button onclick="myFunction()">Pulsa aquí</button>
+
+                                <p id="demo"></p>
+
+                                <script>
+                                    function myFunction() {
+                                      let text;
+                                      let person = prompt("¿Cual es tu nombre?", "Ej: Bilbo Bolson");
+                                      if (person == null || person == "") {
+                                        text = "User cancelled the prompt.";
+                                      } else {
+                                        text = "Hola   "  + person + "   ¡Espero que tengas un excelente día!";
+                                      }
+                                      document.getElementById("demo").innerHTML = text;
+                                    }
+                                    </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center p-5">
+                        <div class="flipcard">
+                            <div class="flipcard-wrap">
+                                <div class="card card-front">
+                                    <img src="/Imagenes/mrc.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5>¡Hey!</h5>
+                                        <p>Pasa por aquí para contactarme</p>
+                                    </div>
+                                </div>
+                                <div class="card card-back display: flex">
+                                    <div class="card-body text-center">
+                                        <p><b>
+                                                Mariano.raul.cajaraville@gmail.com
+                                            </b>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </section>
+
+
+    <!-- Sección Info.personal -->
+    <section id="Infopersonal" class="Info">
+        <div class="text-center">
+            <h1>Info.personal</h1>
+        </div>
+        <ul>
+            <li>Tengo 33 años.</li>
+            <li>Vivo en C.A.B.A.</li>
+            <li>Hoy laboralmente me dedico a la Docencia, especificamente en la rama de la Ed.Física.</li>
+            <li>Me encuentro armando un camino en relación a la tecnología para el día de mañana porder conseguir
+                trabajo</li>
+        </ul>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="Habilidades" class="Habi">
+        <div class="text-center">
+            <h1>Habilidades</h1>
+        </div>
+        <ul>
+            <li>Inciandome en el mundo de la programación</li>
+            <li>Manejo diferentes tipos de programas que me permiten optimizar mi trabajo</li>
+            <li>Me gusta investigar y crear herramientas para solucionar problemas</li>
+        </ul>
+    </section>
+
+    <!-- Sección Experiencias -->
+    <section id="Experiencias" class="Expe">
+        <div class="text-center">
+            <h1>Experiencias</h1>
+        </div>
+        <ul>
+            <li>En los espacios que trabaje siempre trate de acercar mis saberes en relación a la tecnología para poder
+                mejorar y optimizar procesos.</li>
+            <li> Trabeje en colegios tanto estatales como privados</li>
+            <li> También me desarrolle en espacios no formales vinculados a la educación</li>
+        </ul>
+    </section>
+
+    <section class="pie">
+        <div class="container1">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span>© 2023 Diseñado por Mariano.R.Cajaraville</span>
+                </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</html>
