@@ -1,0 +1,139 @@
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+.nombre {
+  color: #B1AFFF;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #333333;
+}
+
+
+.navbar {
+  border-bottom: 4px solid #B1AFFF;
+  background-color: #FDFDBD;
+}
+
+.navbar a {
+  color: #000000;
+}
+
+.container {
+  margin-top: 56px;
+  max-width: 1000px;
+}
+
+.Info {
+  background: #B1AFFF;
+  border-top: #C8FFD4 solid 4px;
+  display: grid
+}
+
+#Habilidades {
+  background: #F7C8E0;
+  border-top: #fdfdbd solid 4px;
+  display: grid
+}
+
+#Experiencialaboral {
+  background: #C8FFD4;
+  border-top: #B8E8FC solid 4px;
+  display: grid
+  
+}
+
+#Formaciónacadémica {
+  background: #b8e8fc;
+  border-top: #F7C8E0 solid 4px;
+  display: grid
+}
+
+.container1 {
+  border-top: 1px solid #000000;
+  background:#fdfdbd; 
+}
+
+
+.container {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.flipcard {
+  perspective: 1000px;
+  margin-bottom: 1.5rem;
+}
+
+.flipcard .flipcard-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flipcard .card-front,
+.flipcard .card-back {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  backface-visibility: hidden;
+  transition: all .3s;
+}
+
+.flipcard .card-front {
+  z-index: 2;
+}
+
+.flipcard .card-front::after {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  border-width: 16px 16px 0 0;
+  border-style: solid;
+  border-color: #999 #fff;
+  border-radius: .25rem 0 0 0;
+}
+
+.flipcard .card-back {
+  position: absolute;
+  top: 0;
+  text-align: left;
+  z-index: 1;
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+
+/* the flippy magic */
+.flipcard:hover .flipcard-wrap {
+  transform: rotateY(-180deg);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+
+i {
+  height: 30px;
+  padding-left: 25px;
+  padding-right: 8px;
+}
+
+.tarjeta i {
+  list-style: none;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+}
